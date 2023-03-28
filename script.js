@@ -1,6 +1,10 @@
-function getCep(){
-    fetch('https://viacep.com.br/ws/61631250/json/')
-    .then(function(response) {
+function getCep(e){
+    let cep = e.value
+    var url = `https://viacep.com.br/ws/${cep}/json/`
+    console.log(url)
+    
+    fetch(url)
+    .then(response => response.jason()) {
        return response.json();
     })
     .then(function(data){
