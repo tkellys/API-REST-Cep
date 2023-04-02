@@ -26,6 +26,7 @@
           <label for="form-control" class="form-label">Cep</label>
           <input type="text" class="form-control" id="inputCep" onblur="getCep()">
         </div>
+        <div id="erro"></div>
         <div class="col-md-5">
           <label for="inputAddress" class="form-label">Logradouro</label>
           <input type="text" class="form-control" id="inputLogradouro" placeholder="Rua/Avenida">
@@ -46,8 +47,7 @@
           <label for="inputState" class="form-label">UF</label>
           <select id="inputEstado" class="form-select">
             <!-- //fazer com fetch// -->
-            <option selected>Ceara...</option>
-            <option>...</option>
+            
           </select>
         </div>
         <div class="col-md-2">
@@ -56,7 +56,7 @@
         </div>
             
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
         </div>
     </div>
       </form>
